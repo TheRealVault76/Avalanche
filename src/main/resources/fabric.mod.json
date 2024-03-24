@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "avalanche",
+	"version": "${version}",
+	"name": "Avalanche",
+	"description": "This mod has cool stuff!",
+	"authors": [
+		"Vault"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/avalanche/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.vault.avalanche.Avalanche"
+		],
+		"fabric-datagen": [
+			"net.vault.avalanche.AvalancheDataGenerator"
+		],
+		"client": [
+			"net.vault.avalanche.AvalancheModClient"
+		]
+	},
+	"mixins": [
+		"avalanche.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.7",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
