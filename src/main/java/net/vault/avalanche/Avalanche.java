@@ -2,6 +2,9 @@ package net.vault.avalanche;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.vault.avalanche.block.ModBlocks;
+import net.vault.avalanche.item.ModItemGroup;
+import net.vault.avalanche.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -11,6 +14,9 @@ public class Avalanche implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		LOGGER.info("Hello Fabric world! <3");
+		ModItemGroup.registerItemGroups();
+
+		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 	}
 }
