@@ -15,9 +15,10 @@ public class ModItemGroup {
             new Identifier(Avalanche.MOD_ID, "diamond_ingot_group"),
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.diamond_ingot_group"))
                     .icon(() -> new ItemStack(ModItems.DIAMOND_INGOT)).entries((displayContext, entries) -> {
-                        entries.add(ModItems.DIAMOND_INGOT);
 
+                        entries.add(ModItems.DIAMOND_INGOT);
                         entries.add(ModBlocks.ROUGH_PRODIUM_BLOCK);
+                        entries.add(ModBlocks.SUPER_COMBINATION_STATION);
 
                     }).build());
 
