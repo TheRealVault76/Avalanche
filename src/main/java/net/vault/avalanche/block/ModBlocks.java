@@ -10,14 +10,10 @@ import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
-import net.vault.avalanche.block.custom.SuperCombinationStationBlock;
 
 public class ModBlocks {
     public static final Block ROUGH_PRODIUM_BLOCK = registerBlock("rough_prodium_block",
             new Block(FabricBlockSettings.copyOf(Blocks.STONE)));
-
-    public static final Block SUPER_COMBINATION_STATION = registerBlock("super_combination_station",
-            new SuperCombinationStationBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).nonOpaque()));
 
 
     private static Block registerBlock(String name, Block block) {
