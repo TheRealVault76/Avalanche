@@ -16,9 +16,18 @@ public class ModItemGroup {
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.diamond_ingot_group"))
                     .icon(() -> new ItemStack(ModItems.DIAMOND_INGOT)).entries((displayContext, entries) -> {
 
-                        entries.add(ModItems.DIAMOND_INGOT);
+                        entries.add(ModItems.ROUGH_PRODIUM);
                         entries.add(ModBlocks.ROUGH_PRODIUM_BLOCK);
-                        entries.add(ModBlocks.SUPER_COMBINATION_STATION);
+                        entries.add(ModItems.DIAMOND_INGOT);
+                        entries.add(ModItems.DRAKONIUM);
+                        entries.add(ModItems.RAW_IRREGULARIUM);
+                        entries.add(ModItems.IRREGULARIUM_BIT);
+                        entries.add(ModItems.IRREGULARIUM_CORE);
+
+                        entries.add(ModItems.IRREGULARIUM_HELMET);
+                        entries.add(ModItems.IRREGULARIUM_CHESTPLATE);
+                        entries.add(ModItems.IRREGULARIUM_LEGGINGS);
+                        entries.add(ModItems.IRREGULARIUM_BOOTS);
 
                     }).build());
 

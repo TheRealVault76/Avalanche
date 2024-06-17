@@ -1,5 +1,10 @@
-// 1.20.1	2024-03-28T12:03:17.535264	Avalanche/Model Definitions
+// 1.20.1	2024-06-17T14:52:34.1726186	Avalanche/Model Definitions
 319fbcf43908998599ed5a80254208de5a7dead2 assets\avalanche\models\block\rough_prodium_block.json
+f906c13d6b178dc251a50022c5e44dc3a5aa6449 assets\avalanche\models\item\irregularium_core.json
 ee1e4929e1222261fe8c3bd60740e0a7e897dac4 assets\avalanche\models\item\diamond_ingot.json
+cf424cb1efaf1efa5d2d97e5ef5a39670006d49e assets\avalanche\models\item\irregularium_bit.json
 4b7a3d75609a4eb731c20ac9c47eba38bddf85a5 assets\avalanche\models\item\rough_prodium_block.json
+c7a7dda43d152655600dedde4eb05ffb847659f0 assets\avalanche\models\item\rough_prodium.json
+10ab836753604a7ee2610cd00347330878038d0f assets\avalanche\models\item\raw_irregularium.json
+48f95e93eb377c811301f00d519537d58dd32f40 assets\avalanche\models\item\drakonium.json
 a207b1c28985f2692242e84c822ed54805c825d6 assets\avalanche\blockstates\rough_prodium_block.json
