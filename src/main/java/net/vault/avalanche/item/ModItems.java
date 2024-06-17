@@ -25,13 +25,13 @@ public class ModItems {
             new Item(new FabricItemSettings()));
 
     public static final Item IRREGULARIUM_HELMET = registerItem("irregularium_helmet",
-            new IrregulariumArmorItem(ModArmorMaterials.IRREGULARIUM_CORE, ArmorItem.Type.HELMET, new FabricItemSettings()));
+            new IrregulariumArmorItem(ModArmorMaterials.IRREGULARIUM, ArmorItem.Type.HELMET, new FabricItemSettings()));
     public static final Item IRREGULARIUM_CHESTPLATE = registerItem("irregularium_chestplate",
-            new IrregulariumArmorItem(ModArmorMaterials.IRREGULARIUM_CORE, ArmorItem.Type.CHESTPLATE, new FabricItemSettings()));
+            new IrregulariumArmorItem(ModArmorMaterials.IRREGULARIUM, ArmorItem.Type.CHESTPLATE, new FabricItemSettings()));
     public static final Item IRREGULARIUM_LEGGINGS = registerItem("irregularium_leggings",
-            new IrregulariumArmorItem(ModArmorMaterials.IRREGULARIUM_CORE, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
+            new IrregulariumArmorItem(ModArmorMaterials.IRREGULARIUM, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
     public static final Item IRREGULARIUM_BOOTS = registerItem("irregularium_boots",
-            new IrregulariumArmorItem(ModArmorMaterials.IRREGULARIUM_CORE, ArmorItem.Type.BOOTS, new FabricItemSettings()));
+            new IrregulariumArmorItem(ModArmorMaterials.IRREGULARIUM, ArmorItem.Type.BOOTS, new FabricItemSettings()));
 
 
     private static Item registerItem (String name, Item item) {
