@@ -1,5 +1,6 @@
 package net.vault.avalanche.item;
 
+import net.vault.avalanche.Avalanche;
 import net.minecraft.item.*;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.sound.SoundEvent;
@@ -7,7 +8,6 @@ import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.Lazy;
 import net.minecraft.util.StringIdentifiable;
 import net.minecraft.util.Util;
-import net.vault.avalanche.Avalanche;
 
 import java.util.EnumMap;
 import java.util.function.Supplier;
@@ -18,9 +18,7 @@ public enum ModArmorMaterials implements ArmorMaterial {
         map.put(ArmorItem.Type.LEGGINGS, 7);
         map.put(ArmorItem.Type.CHESTPLATE, 9);
         map.put(ArmorItem.Type.HELMET, 3);
-    }), 21, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 1.05F, 0.15F, () -> {
-        return Ingredient.ofItems(new ItemConvertible[]{ModItems.IRREGULARIUM_CORE});
-    });
+    }), 21, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 3.15f, 0.115f, () -> Ingredient.ofItems(ModItems.IRREGULARIUM_CORE));
 
     public static final StringIdentifiable.Codec<ArmorMaterials> CODEC;
     private static final EnumMap<ArmorItem.Type, Integer> BASE_DURABILITY;

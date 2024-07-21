@@ -13,7 +13,7 @@ public class IrregulariumArmorModel extends GeoModel<IrregulariumArmorItem> {
 
     @Override
     public Identifier getTextureResource(IrregulariumArmorItem animatable) {
-        return new Identifier(Avalanche.MOD_ID, "textures/models/armor/irregularium_armor_complete.png");
+        return new Identifier(Avalanche.MOD_ID, "textures/models/armor/irregularium_armor.png");
     }
 
     @Override

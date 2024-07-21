@@ -29,6 +29,7 @@ public class ModItemGroup {
                         entries.add(ModItems.IRREGULARIUM_LEGGINGS);
                         entries.add(ModItems.IRREGULARIUM_BOOTS);
 
+
                     }).build());
 
     public static void registerItemGroups() {

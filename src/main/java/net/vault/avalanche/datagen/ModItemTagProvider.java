@@ -3,6 +3,8 @@ package net.vault.avalanche.datagen;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.minecraft.registry.RegistryWrapper;
+import net.minecraft.registry.tag.ItemTags;
+import net.vault.avalanche.item.ModItems;
 
 import java.util.concurrent.CompletableFuture;
 
