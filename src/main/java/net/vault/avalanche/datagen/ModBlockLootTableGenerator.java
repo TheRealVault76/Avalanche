@@ -11,6 +11,8 @@ public class ModBlockLootTableGenerator extends FabricBlockLootTableProvider {
 
     @Override
     public void generate() {
-        addDrop(ModBlocks.ROUGH_PRODIUM_BLOCK);
+        addDrop(ModBlocks.DRAGON_SCALE_BLOCK);
     }
+
 }
+
