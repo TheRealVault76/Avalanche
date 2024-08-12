@@ -1,12 +1,7 @@
 {
-  "item.avalanche.rough_prodium": "Rough Prodium",
-  "item.avalanche.diamond_ingot": "Diamond Ingot",
-  "item.avalanche.drakonium": "Drakōnium",
-  "item.avalanche.raw_irregularium": "Raw Irregularium",
-  "item.avalanche.irregularium_bit": "Irregularium Bit",
-  "item.avalanche.irregularium_core": "Irregularium Core",
+  "item.avalanche.dragon_scale": "Dragon Scale",
 
-  "block.avalanche.rough_prodium_block": "Rough Prodium Block",
+  "block.avalanche.dragon_scale_block": "Dragon Scale Block",
 
   "itemgroup.diamond_ingot_group": "Avalanche"
 }
