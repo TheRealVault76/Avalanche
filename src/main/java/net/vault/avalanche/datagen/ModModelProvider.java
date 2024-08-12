@@ -16,23 +16,15 @@ public class ModModelProvider extends FabricModelProvider {
 
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ROUGH_PRODIUM_BLOCK);
-
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DRAGON_SCALE_BLOCK);
 
     }
 
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
-        itemModelGenerator.register(ModItems.ROUGH_PRODIUM, Models.GENERATED);
-        itemModelGenerator.register(ModItems.DIAMOND_INGOT, Models.GENERATED);
-        itemModelGenerator.register(ModItems.DRAKONIUM, Models.GENERATED);
-        itemModelGenerator.register(ModItems.RAW_IRREGULARIUM, Models.GENERATED);
-        itemModelGenerator.register(ModItems.IRREGULARIUM_BIT, Models.GENERATED);
-        itemModelGenerator.register(ModItems.IRREGULARIUM_CORE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.DRAGON_SCALE, Models.GENERATED);
 
-        itemModelGenerator.registerArmor(((ArmorItem) ModItems.IRREGULARIUM_HELMET));
-        itemModelGenerator.registerArmor(((ArmorItem) ModItems.IRREGULARIUM_CHESTPLATE));
-        itemModelGenerator.registerArmor(((ArmorItem) ModItems.IRREGULARIUM_LEGGINGS));
-        itemModelGenerator.registerArmor(((ArmorItem) ModItems.IRREGULARIUM_BOOTS));
+
+
     }
 }
