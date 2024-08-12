@@ -2,6 +2,7 @@ package net.vault.avalanche.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
+import net.vault.avalanche.block.ModBlocks;
 import net.vault.avalanche.item.ModItems;
 import net.minecraft.data.server.recipe.RecipeJsonProvider;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
@@ -18,12 +19,7 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
 
     @Override
     public void generate(Consumer<RecipeJsonProvider> exporter) {
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.DIAMOND_INGOT)
-                .pattern("DDD")
-                .pattern("DDD")
-                .input('D', Items.DIAMOND)
-                .criterion(hasItem(Items.DIAMOND), conditionsFromItem(Items.DIAMOND))
-                .offerTo(exporter, new Identifier(getRecipeName(ModItems.DIAMOND_INGOT) + "_"));
+        offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, ModItems.DRAGON_SCALE, RecipeCategory.MISC, ModBlocks.DRAGON_SCALE_BLOCK);
 
     }
 }
