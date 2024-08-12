@@ -12,8 +12,8 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 
 public class ModBlocks {
-    public static final Block ROUGH_PRODIUM_BLOCK = registerBlock("rough_prodium_block",
-            new Block(FabricBlockSettings.copyOf(Blocks.STONE)));
+    public static final Block DRAGON_SCALE_BLOCK = registerBlock("dragon_scale_block",
+            new Block(FabricBlockSettings.copyOf(Blocks.OBSIDIAN)));
 
 
     private static Block registerBlock(String name, Block block) {
@@ -29,4 +29,3 @@ public class ModBlocks {
     public static void registerModBlocks() {
         Avalanche.LOGGER.info("Registering ModBlocks for " + Avalanche.MOD_ID);
     }
-}
