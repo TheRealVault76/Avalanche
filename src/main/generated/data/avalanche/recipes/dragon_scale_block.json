@@ -2,16 +2,17 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "D": {
-      "item": "minecraft:diamond"
+    "#": {
+      "item": "avalanche:dragon_scale"
     }
   },
   "pattern": [
-    "DDD",
-    "DDD"
+    "###",
+    "###",
+    "###"
   ],
   "result": {
-    "item": "avalanche:diamond_ingot"
+    "item": "avalanche:dragon_scale_block"
   },
   "show_notification": true
 }

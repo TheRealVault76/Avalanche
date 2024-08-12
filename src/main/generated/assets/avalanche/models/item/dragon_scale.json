@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "avalanche:item/irregularium_leggings"
+    "layer0": "avalanche:item/dragon_scale"
   }
 }

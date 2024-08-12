@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_diamond": {
+    "has_dragon_scale": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:diamond"
+              "avalanche:dragon_scale"
             ]
           }
         ]
@@ -15,20 +15,20 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:diamond_ingot_"
+        "recipe": "minecraft:dragon_scale_block"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_diamond",
+      "has_dragon_scale",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "minecraft:diamond_ingot_"
+      "minecraft:dragon_scale_block"
     ]
   },
   "sends_telemetry_event": false

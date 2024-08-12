@@ -1,14 +1,5 @@
-// 1.20.1	2024-06-18T11:31:14.0981906	Avalanche/Model Definitions
-319fbcf43908998599ed5a80254208de5a7dead2 assets\avalanche\models\block\rough_prodium_block.json
-f906c13d6b178dc251a50022c5e44dc3a5aa6449 assets\avalanche\models\item\irregularium_core.json
-ee1e4929e1222261fe8c3bd60740e0a7e897dac4 assets\avalanche\models\item\diamond_ingot.json
-9816b5a2a79dafee327516e07bfeea790479cab7 assets\avalanche\models\item\irregularium_helmet.json
-78fbf50b3ee1fb41b7fc73a97d31268b5ddd7bf3 assets\avalanche\models\item\irregularium_boots.json
-c13e8096f9726a5d6e1080ea22cc7559644f7e77 assets\avalanche\models\item\irregularium_leggings.json
-10ab836753604a7ee2610cd00347330878038d0f assets\avalanche\models\item\raw_irregularium.json
-cf424cb1efaf1efa5d2d97e5ef5a39670006d49e assets\avalanche\models\item\irregularium_bit.json
-c3b425cc5a9e41c0ec2309b4eb5648d70de9e722 assets\avalanche\models\item\irregularium_chestplate.json
-c7a7dda43d152655600dedde4eb05ffb847659f0 assets\avalanche\models\item\rough_prodium.json
-4b7a3d75609a4eb731c20ac9c47eba38bddf85a5 assets\avalanche\models\item\rough_prodium_block.json
-48f95e93eb377c811301f00d519537d58dd32f40 assets\avalanche\models\item\drakonium.json
-a207b1c28985f2692242e84c822ed54805c825d6 assets\avalanche\blockstates\rough_prodium_block.json
+// 1.20.1	2024-08-12T15:07:43.3549458	Avalanche/Model Definitions
+77ad40c80a7ffe1b8d98372f0b339172b7d9656b assets\avalanche\models\item\dragon_scale_block.json
+b5f9149ae181d008fbc83b140cf32571db5db08e assets\avalanche\blockstates\dragon_scale_block.json
+b539a32ac3685deaa21cb3c5843a43f894c4dc4f assets\avalanche\models\block\dragon_scale_block.json
+013869d0640834dcf1c1ccea8bc1126105742ec3 assets\avalanche\models\item\dragon_scale.json

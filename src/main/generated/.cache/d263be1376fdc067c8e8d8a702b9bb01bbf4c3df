@@ -1,3 +1,5 @@
-// 1.20.1	2024-06-18T11:31:14.1012681	Avalanche/Recipes
-3e60e7eb22c77eee2147f20e63b26868de7f1217 data\avalanche\recipes\diamond_ingot_.json
-7f910830a975f239e94989d6aca5785b702957ee data\avalanche\advancements\recipes\misc\diamond_ingot_.json
+// 1.20.1	2024-08-12T15:07:43.3574502	Avalanche/Recipes
+de85f07536ccd365fdef925b853f9fc24cfc75f8 data\avalanche\recipes\dragon_scale.json
+9ab8d197787879f734328ba8d2a8a6cc473f9d8e data\avalanche\advancements\recipes\misc\dragon_scale.json
+019ad5938c62adb40d5cbe4afe26c588898541fe data\avalanche\recipes\dragon_scale_block.json
+41f778ad94a9c9b8832f9508bfb5051f5c8b57fc data\avalanche\advancements\recipes\misc\dragon_scale_block.json

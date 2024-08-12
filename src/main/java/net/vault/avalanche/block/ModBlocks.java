@@ -29,3 +29,4 @@ public class ModBlocks {
     public static void registerModBlocks() {
         Avalanche.LOGGER.info("Registering ModBlocks for " + Avalanche.MOD_ID);
     }
+}
