@@ -18,7 +18,7 @@ public class ModBlocks {
             new Block(FabricBlockSettings.copyOf(Blocks.OBSIDIAN)));
 
     public static final Block SUPER_COMBINATION_STATION = registerBlock("super_combination_station",
-            new SuperCombinationStationBlock(FabricBlockSettings.copyOf(Blocks.OBSIDIAN).nonOpaque());
+            new SuperCombinationStationBlock(FabricBlockSettings.copyOf(Blocks.OBSIDIAN).nonOpaque()));
 
 
     private static Block registerBlock(String name, Block block) {
