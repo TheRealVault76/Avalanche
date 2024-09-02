@@ -22,9 +22,9 @@ public class ModModelProvider extends FabricModelProvider {
 
         blockStateModelGenerator.blockStateCollector.accept(VariantsBlockStateSupplier.create(ModBlocks.SUPER_COMBINATION_STATION)
                 .coordinate(BlockStateVariantMap.create(SuperCombinationStationBlock.PART, SuperCombinationStationBlock.FACING)
-                        .register((QuadBlockFlat, direction) -> {
+                        .register((quadBlockFlat, direction) -> {
                             BlockStateVariant blockStateVariant = BlockStateVariant.create()
-                                    .put(VariantSettings.MODEL, Identifier.of(Avalanche.MOD_ID, "block/super_combination_station_" + (QuadBlockFlat.ordinal() + 1)));
+                                    .put(VariantSettings.MODEL, Identifier.of(Avalanche.MOD_ID, "block/super_combination_station_" + (quadBlockFlat.ordinal() + 1)));
                             switch (direction) {
                                 case SOUTH -> blockStateVariant.put(VariantSettings.Y, VariantSettings.Rotation.R180);
                                 case WEST -> blockStateVariant.put(VariantSettings.Y, VariantSettings.Rotation.R270);

@@ -104,13 +104,12 @@ public class SuperCombinationStationBlock extends Block {
     }
 
     private List<BlockPos> getPartPositions(BlockPos pos, Direction facing) {
-        // Define positions relative to the main block based on facing direction
 
         return List.of(
                 pos,
-                pos.offset(facing.rotateYClockwise()),
-                pos.offset(facing.rotateYCounterclockwise()),
-                pos.offset((facing.rotateYClockwise())).offset(facing.rotateYCounterclockwise())
+                pos.offset(facing),
+                pos.offset(facing).offset(facing.rotateYCounterclockwise()),
+                pos.offset(facing.rotateYCounterclockwise())
         );
     }
 
