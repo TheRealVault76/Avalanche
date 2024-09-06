@@ -16,7 +16,6 @@ import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.util.shape.VoxelShapes;
 import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
-import net.minecraft.world.WorldAccess;
 import net.vault.avalanche.block.enums.QuadBlockFlat;
 import org.jetbrains.annotations.Nullable;
 
@@ -106,46 +105,11 @@ public class SuperCombinationStationBlock extends Block {
     private List<BlockPos> getPartPositions(BlockPos pos, Direction facing) {
 
         return List.of(
-                pos,
-                pos.offset(facing),
                 pos.offset(facing).offset(facing.rotateYCounterclockwise()),
+                pos.offset(facing),
+                pos,
                 pos.offset(facing.rotateYCounterclockwise())
         );
-    }
-
-    @Override
-    @SuppressWarnings("deprecation")
-    public BlockState getStateForNeighborUpdate(BlockState state, Direction direction, BlockState neighborState, WorldAccess world, BlockPos pos, BlockPos neighborPos) {
-        // Check if a neighboring block was updated and if it might affect the block's parts
-        if (!world.isClient()) {
-            Direction facing = state.get(FACING);
-            List<BlockPos> partPositions = getPartPositions(pos, facing);
-
-            // Remove all parts if any part's neighbor is updated
-            if (partPositions.stream().anyMatch(neighborPos::equals)) {
-                return Blocks.AIR.getDefaultState();
-            }
-        }
-        return super.getStateForNeighborUpdate(state, direction, neighborState, world, pos, neighborPos);
-    }
-
-    @Override
-    @SuppressWarnings("deprecation")
-    public void neighborUpdate(BlockState state, World world, BlockPos pos, Block sourceBlock, BlockPos sourcePos, boolean notify) {
-        super.neighborUpdate(state, world, pos, sourceBlock, sourcePos, notify);
-
-        // Check if a neighboring block was updated and if it might affect the block's parts
-        if (!world.isClient()) {
-            Direction facing = state.get(FACING);
-            List<BlockPos> partPositions = getPartPositions(pos, facing);
-
-            // Remove all parts if any part's neighbor is updated
-            if (partPositions.stream().anyMatch(partPos -> !world.getBlockState(partPos).isOf(this))) {
-                for (BlockPos partPosition : partPositions) {
-                    world.setBlockState(partPosition, Blocks.AIR.getDefaultState(), Block.NOTIFY_ALL);
-                }
-            }
-        }
     }
 
     @Override
@@ -159,4 +123,21 @@ public class SuperCombinationStationBlock extends Block {
     public BlockState mirror(BlockState state, BlockMirror mirror) {
         return state.rotate(mirror.getRotation(state.get(FACING)));
     }
+
+    /*@Override
+    @SuppressWarnings("deprecation")
+    public void neighborUpdate(BlockState state, World world, BlockPos pos, Block sourceBlock, BlockPos sourcePos, boolean notify) {
+        super.neighborUpdate(state, world, pos, sourceBlock, sourcePos, notify);
+
+        if (!world.isClient()) {
+            Direction facing = state.get(FACING);
+            List<BlockPos> partPositions = getPartPositions(pos, facing);
+            
+            if (partPositions.stream().anyMatch(partPos -> !world.getBlockState(partPos).isOf(this))) {
+                for (BlockPos partPosition : partPositions) {
+                    world.setBlockState(partPosition, Blocks.IRON_BLOCK.getDefaultState(), Block.NOTIFY_ALL);
+                }
+            }
+        }
+    }*/
 }
